@@ -46,7 +46,6 @@ function StudentList() {
       phoneNumber: '1112223333',
       address: '101 Pine St, Countryside',
     },
-   
   ]);
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -136,21 +135,21 @@ function StudentList() {
         <table className="table-auto w-full bg-white shadow">
           <thead>
             <tr>
-              <th className="px-4 py-3">Student</th>
-              <th className="px-4 py-3">Date of Birth</th>
-              <th className="px-4 py-3">Gender</th>
-              <th className="px-4 py-3">Father Name</th>
-              <th className="px-4 py-3">Mother Name</th>
-              <th className="px-4 py-3">Email Id</th>
-              <th className="px-4 py-3">Phone Number</th>
-              <th className="px-4 py-3">Address</th>
-              <th className="px-4 py-3">Action</th>
+              <th className="px-2 sm:px-4 py-3">Student</th>
+              <th className="px-2 sm:px-4 py-3">Date of Birth</th>
+              <th className="px-2 sm:px-4 py-3">Gender</th>
+              <th className="px-2 sm:px-4 py-3">Father Name</th>
+              <th className="px-2 sm:px-4 py-3">Mother Name</th>
+              <th className="px-2 sm:px-4 py-3">Email Id</th>
+              <th className="px-2 sm:px-4 py-3">Phone Number</th>
+              <th className="px-2 sm:px-4 py-3">Address</th>
+              <th className="px-2 sm:px-4 py-3">Action</th>
             </tr>
           </thead>
           <tbody>
             {filteredStudents.map((student) => (
               <tr key={student.id}>
-                <td className="px-4 py-3 flex items-center">
+                <td className="px-2 sm:px-4 py-3 flex items-center">
                   <img
                     src="https://assets.stickpng.com/images/585e4bcdcb11b227491c3396.png"
                     alt="User Icon"
@@ -158,14 +157,14 @@ function StudentList() {
                   />
                   {student.name}
                 </td>
-                <td className="px-4 py-3">{student.dob}</td>
-                <td className="px-4 py-3">{student.gender}</td>
-                <td className="px-4 py-3">{student.fatherName}</td>
-                <td className="px-4 py-3">{student.motherName}</td>
-                <td className="px-4 py-3">{student.email}</td>
-                <td className="px-4 py-3">{student.phoneNumber}</td>
-                <td className="px-4 py-3">{student.address}</td>
-                <td className="px-4 py-3">
+                <td className="px-2 sm:px-4 py-3">{student.dob}</td>
+                <td className="px-2 sm:px-4 py-3">{student.gender}</td>
+                <td className="px-2 sm:px-4 py-3">{student.fatherName}</td>
+                <td className="px-2 sm:px-4 py-3">{student.motherName}</td>
+                <td className="px-2 sm:px-4 py-3">{student.email}</td>
+                <td className="px-2 sm:px-4 py-3">{student.phoneNumber}</td>
+                <td className="px-2 sm:px-4 py-3">{student.address}</td>
+                <td className="px-2 sm:px-4 py-3">
                   <button
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                     onClick={() => handleDeleteStudent(student.id)}
@@ -183,7 +182,7 @@ function StudentList() {
               className="modal-bg fixed inset-0 bg-black opacity-50"
               onClick={toggleModal}
             ></div>
-            <div className="modal-content bg-white p-4 rounded shadow-lg z-10 w-1/2">
+            <div className="modal-content bg-white p-4 rounded shadow-lg z-10 w-full max-w-sm mx-auto">
               <h2 className="text-xl font-semibold mb-4">Add Student</h2>
               <div className="mb-4">
                 <label className="block text-gray-600 font-semibold">

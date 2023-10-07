@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "dob": "1995-05-10",
+      "gender": "Male",
+      "fatherName": "Mr. Doe",
+      "motherName": "Mrs. Doe",
+      "email": "john@example.com",
+      "phoneNumber": "1234567890",
+      "address": "123 Main St, City"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "dob": "1998-02-15",
+      "gender": "Female",
+      "fatherName": "Mr. Smith",
+      "motherName": "Mrs. Smith",
+      "email": "jane@example.com",
+      "phoneNumber": "9876543210",
+      "address": "456 Elm St, Town"
+    }
+  ]
+  
